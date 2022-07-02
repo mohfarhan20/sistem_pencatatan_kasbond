@@ -38,9 +38,41 @@
                         <td>{{ $p->nominal }}</td>
                         <td>{{ $p->keterangan_transaksi }}</td>
                         <td>
-                            <a href="/data_kasbond/edit/{{ $p->id }}">edit</a>
-                            |
-                            <a href="/data_kasbond/hapus/{{ $p->id }}">Hapus</a>
+
+                            <a href="/data_kasbond/edit/{{ $p->id }}">
+                                <button type="button" class="btn btn-success">
+                                    Edit
+                                </button>
+                            </a>
+
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Hapus
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Konfirmasi</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Apakah anda yakin ingin menghapus data ini?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Batalkan</button>
+                                            <a href="/data_kasbond/hapus/{{ $p->id }}">
+                                                <button type="button" class="btn btn-danger">Hapus</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </td>
                     </tr>
                 @endforeach
