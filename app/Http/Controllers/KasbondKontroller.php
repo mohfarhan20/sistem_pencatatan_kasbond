@@ -69,7 +69,6 @@ class KasbondKontroller extends Controller
     }
 
 
-
     public function hapus($id)
     {
         // menghapus data pegawai berdasarkan id yang dipilih
