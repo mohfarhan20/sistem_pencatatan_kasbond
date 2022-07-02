@@ -23,9 +23,8 @@
         @endif
         <form action="{{ route('user.update') }}" method="POST">
             @csrf
-
             <div>
-                <input name="id" id="id" value="{{ $data_kasbond->id }}">
+                <input type="hidden" name="id" value="{{ $data_kasbond->id }}" />
                 <select name="coa" id="coa" class="js-example-basic-single form-control" required>
                     <option disabled>Pilih Semester</option>
                     @foreach ($master_data as $data)
@@ -34,12 +33,6 @@
                             {{ $data->coa }} - {{ $data->deskripsi }}
                         </option>
                     @endforeach
-                    {{-- <option value="{{ $data_kasbond->id  }}">Pilih COA - Deskripsi</option>
-                    @foreach ($master_data as $data)
-                    <option value="{{ $data->id}}">{{ $data->coa }} -
-                        {{ $data->deskripsi}}
-                    </option>
-                    @endforeach --}}
                 </select>
             </div>
             <br>
@@ -57,7 +50,7 @@
             </div>
 
             <div class="d-grid">
-                <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
+                <button class="btn btn-primary btn-lg" id="submit" type="submit">Submit</button>
             </div>
         </form>
 
