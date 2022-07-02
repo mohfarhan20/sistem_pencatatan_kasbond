@@ -47,27 +47,19 @@ class KasbondKontroller extends Controller
 
     public function edit($id)
     {
-        $data_kasbond = DB::table('data_kasbond')->where('id', $id)->first();
-        dd($data_kasbond);
-        // passing data data_kasbond yang didapat ke view edit.blade.php
+        $data_kasbond = DataKasbond::find($id);
         $master_data = MasterData::all();
         return view('edit', compact('data_kasbond', 'master_data'));
     }
 
-
     public function update(Request $request)
     {
-
         $data = DataKasbond::where('id', $request->id)->first();
-        dd($request);
-        // Update Every Element
-        // $data->(Nama_Kolom_di_Tabel_Database) = $request->(name_di_views)
         $coa = MasterData::whereId($request->coa)->first();
         $data->id_master_data = $coa->id;
         $data->nominal = $request->nominal;
         $data->keterangan_transaksi = $request->keterangan_transaksi;
-        $data->created_updated_at = now();
-
+        $data->created_at = now();
 
         if ($data->save()) {
             return redirect('/')->with('status', 'Data Berhasil Diperbarui');
