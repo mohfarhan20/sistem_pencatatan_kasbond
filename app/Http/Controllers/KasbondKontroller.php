@@ -11,7 +11,7 @@ class KasbondKontroller extends Controller
 {
     public function index()
     {
-        $data_kasbond = DataKasbond::with('MasterData')->get();
+        $data_kasbond = DataKasbond::with('MasterData')->latest()->get();
         return view('index', compact('data_kasbond'));
     }
 
