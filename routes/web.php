@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\KasbondKontroller;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +23,9 @@ Route::post('/data_kasbond/tambah', [KasbondKontroller::class, 'store'])->name('
 Route::get('/data_kasbond/edit/{id}', [KasbondKontroller::class, 'edit'])->name('user.edit');
 Route::post('/data_kasbond/update', [KasbondKontroller::class, 'update'])->name('user.update');
 Route::get('/data_kasbond/hapus/{id}', [KasbondKontroller::class, 'hapus'])->name('user.hapus');
+
+// Route for login
+Route::get('/login', [LoginController::class, 'index']);
+
+// Route for register
+Route::get('/register', [RegisterController::class, 'index']);
