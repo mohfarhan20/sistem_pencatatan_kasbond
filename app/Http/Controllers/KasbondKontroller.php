@@ -2,16 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Models\DataKasbond;
 use App\Models\MasterData;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Http\Request;
 
 class KasbondKontroller extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $data_kasbond = DataKasbond::with('MasterData')->get();
+
+        $data_kasbond = DataKasbond::with('MasterData');
+        if ($request->tanggal) {
+            $data_kasbond = $data_kasbond->where('created_at', $request->tanggal);
+        }
+        $data_kasbond = $data_kasbond->get();
+
         return view('index', compact('data_kasbond'));
     }
 
