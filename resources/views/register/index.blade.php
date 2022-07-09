@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
 
+    <script src="https: //ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script src=" {{ asset('js/jquery.table2excel.js') }}"></script>
 </head>
 <div class="container">
 

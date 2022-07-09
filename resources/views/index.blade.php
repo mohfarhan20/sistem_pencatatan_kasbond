@@ -2,21 +2,34 @@
 <html>
 
 <head>
+    <script src="https: //ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <title> Sistem Pencatatan KASBON</title>
     <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.2.0/dist/select2-bootstrap-5-theme.min.css" />
 
+    <script src=" {{ asset('js/jquery.table2excel.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script
+        src="https://www.jqueryscript.net/demo/Export-Html-Table-To-Excel-Spreadsheet-using-jQuery-table2excel/src/jquery.table2excel.js">
+    </script>
 </head>
 
 <body>
 
     <section>
         <h2 class="text-center text-primary mt-5"> Data Kasbond </h2>
+        <button id="sheetjsexport"><b>Export as XLSX</b></button>
         <div class="container">
             <a href="/data_kasbond/tambah"> + Tambah Data Baru</a>
-            <table border="1" class="table table-striped mt-2">
+            <form action="/">
+
+                <input type="date" name="tanggal" id="tanggal">
+                <button type="submit">submit</button>
+            </form>
+            <table border="1" class="table table-striped mt-2" id="TableToExport">
+
                 <tr>
                     <thead class="table-dark">
                         <th>No</th>
@@ -79,12 +92,20 @@
 
             </table>
 
+
         </div>
     </section>
 
 
-    <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
-
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <script>
+        document.getElementById("sheetjsexport").addEventListener('click', function() {
+            /* Create worksheet from HTML DOM TABLE */
+            var wb = XLSX.utils.table_to_book(document.getElementById("TableToExport"));
+            /* Export to file (start a download) */
+            XLSX.writeFile(wb, "SheetJSTable.xlsx");
+        });
+    </script>
 </body>
 
 </html>
