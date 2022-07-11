@@ -75,11 +75,12 @@
                                     Edit
                                 </button>
                             </a>
-
+                            <a href="/data_kasbond/hapus/{{ $p->id }}">
                             <button type="button" class="btn btn-danger" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
                                 Hapus
                             </button>
+                            </a>
 
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
