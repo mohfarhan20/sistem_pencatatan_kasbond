@@ -14,6 +14,12 @@
     <script
         src="https://www.jqueryscript.net/demo/Export-Html-Table-To-Excel-Spreadsheet-using-jQuery-table2excel/src/jquery.table2excel.js">
     </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -23,11 +29,23 @@
         <button id="sheetjsexport"><b>Export as XLSX</b></button>
         <div class="container">
             <a href="/data_kasbond/tambah"> + Tambah Data Baru</a>
-            <form action="/">
+            <form action="/" class="my-1">
 
                 <input type="date" name="tanggal" id="tanggal">
                 <button type="submit">submit</button>
             </form>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form action="/">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search..." name="search" value="{{ request('search') }}">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+
             <table border="1" class="table table-striped mt-2" id="TableToExport">
 
                 <tr>
@@ -92,7 +110,10 @@
 
             </table>
 
-
+            <div class="d-flex justify-content-end">
+                {{ $data_kasbond->links() }}
+            </div>
+            
         </div>
     </section>
 

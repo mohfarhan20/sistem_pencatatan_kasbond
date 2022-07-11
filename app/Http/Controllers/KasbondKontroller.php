@@ -11,13 +11,21 @@ class KasbondKontroller extends Controller
 {
     public function index(Request $request)
     {
+// <<<<<<< HEAD
+        // $data_kasbond = DataKasbond::with('MasterData')->latest()->get();
+// =======
 
-        $data_kasbond = DataKasbond::with('MasterData');
+        $data_kasbond = DataKasbond::with('MasterData')->latest();
         if ($request->tanggal) {
             $data_kasbond = $data_kasbond->where('created_at', $request->tanggal);
         }
-        $data_kasbond = $data_kasbond->get();
+        if(request('search')) {
+            $data_kasbond->where('keterangan_transaksi', 'like', '%' . request('search') . '%')
+                            ->orWhere('nominal', 'like', '%' . request('search') . '%');
+        }
+        $data_kasbond = $data_kasbond->paginate(10);
 
+// >>>>>>> 99cbdf6bd8971ccb9c018e882b32ffd5c4b8837b
         return view('index', compact('data_kasbond'));
     }
 
