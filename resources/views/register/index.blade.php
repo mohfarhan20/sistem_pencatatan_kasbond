@@ -7,18 +7,15 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.98.0">
-    <title> Register</title>
+    <title> Register </title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.2.0/dist/select2-bootstrap-5-theme.min.css" />
-    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
 
-    <script src="https: //ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-    <script src=" {{ asset('js/jquery.table2excel.js') }}"></script>
 </head>
 <div class="container">
 
@@ -28,44 +25,52 @@
             <body class="text-center">
 
                 <main class="form-signin w-100 m-auto">
-                    <form>
-                        <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72"
-                            height="57">
-                        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+                    <form action="/register" method="POST">
+                        @csrf
+                        <img class="mb-4" alt="">
+                        <h1 class="h3 mb-3 fw-normal">Register</h1>
 
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="name" name="name"
-                                placeholder="Bank Sumsel">
-                            <label for="name">Nama</label>
-                        </div>
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="username" name="username"
-                                placeholder="Example Name">
-                            <label for="username">Username</label>
-                        </div>
+                            <input type="text" class="form-control @eror('nama') is-invalid @enderror"
+                                id="nama" name="nama" placeholder="Input Nama">
+                            <label for="nama">Nama</label>
+                            @eror('nama')
+                            <div class="invalid-feedback">
+                                {{ $messeage }}
+                            </div>
+                        @enderror
+                    </div>
 
-                        <div class="form-floating">
-                            <input type="email" class="form-control" id="floatingInput"
-                                placeholder="name@example.com">
-                            <label for="floatingInput">Email address</label>
-                        </div>
-                        <div class="form-floating">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Password</label>
-                        </div>
-                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                    <div class="form-floating">
+                        <input type="text"
+                            class="form-control @eror('username') is-invalid @enderror "id="username"
+                            name="username" placeholder="Input Username">
+                        <label for="username">Username</label>
+                    </div>
 
-                    </form>
-                </main>
+                    <div class="form-floating">
+                        <input type="email" class="form-control @eror('email') is-invalid @enderror"
+                            id="email" placeholder="Input Email">
+                        <label for="email">Email address</label>
+                    </div>
+
+                    <div class="form-floating">
+                        <input type="password" class="form-control @eror('password') is-invalid @enderror"
+                            id="password" placeholder="Password">
+                        <label for="password">Password</label>
+                    </div>
+
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+
+                </form>
+                <small class="d-block text-center mt-3"> Already Registered <a href="/login">Login
+                    </a></small>
 
 
-
-            </body>
-        </div>
+            </main>
+        </body>
     </div>
 </div>
-
-
-
+</div>
 
 </html>
