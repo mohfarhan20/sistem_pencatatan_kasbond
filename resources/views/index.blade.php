@@ -19,7 +19,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -39,9 +40,10 @@
                 <div class="col-md-6">
                     <form action="/">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Search..." name="search" value="{{ request('search') }}">
+                            <input type="text" class="form-control" placeholder="Search..." name="search"
+                                value="{{ request('search') }}">
                             <button class="btn btn-outline-secondary" type="submit">Search</button>
-                          </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -75,12 +77,14 @@
                                     Edit
                                 </button>
                             </a>
-                            <a href="/data_kasbond/hapus/{{ $p->id }}">
-                            <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                Hapus
-                            </button>
-                            </a>
+                            {{-- HAPUSS --}}
+
+                            {{-- <a href="/data_kasbond/hapus/{{ $p->id }}">
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Hapus
+                                </button>
+                            </a> --}}
 
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -98,9 +102,13 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Batalkan</button>
-                                            <a href="/data_kasbond/hapus/{{ $p->id }}">
-                                                <button type="button" class="btn btn-danger">Hapus</button>
-                                            </a>
+                                            <form action="/data_kasbond/hapus/{{ $p->id }}">
+                                                <button type="submit" class="btn btn-danger" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    Hapus
+                                                </button>
+                                            </form>
+
                                         </div>
                                     </div>
                                 </div>
@@ -114,7 +122,7 @@
             <div class="d-flex justify-content-end">
                 {{ $data_kasbond->links() }}
             </div>
-            
+
         </div>
     </section>
 
