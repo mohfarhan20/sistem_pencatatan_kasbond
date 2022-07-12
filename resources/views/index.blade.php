@@ -67,8 +67,11 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Batalkan</button>
-                                            <a href="/data_kasbond/hapus/{{ $p->id }}">
-                                                <button type="button" class="btn btn-danger">Hapus</button>
+                                            <form action="{{ route('user.hapus', $p->id) }}" method="POST">
+                                                @csrf
+                                                @method('delete')
+                                                <button type="submit" class="btn btn-danger">Hapus</button>
+                                            </form>
                                             </a>
                                         </div>
                                     </div>
