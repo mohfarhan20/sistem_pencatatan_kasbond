@@ -22,11 +22,7 @@ Route::get('/data_kasbond/tambah', [KasbondKontroller::class, 'tambah'])->name('
 Route::post('/data_kasbond/tambah', [KasbondKontroller::class, 'store'])->name('user.store');
 Route::get('/data_kasbond/edit/{id}', [KasbondKontroller::class, 'edit'])->name('user.edit');
 Route::post('/data_kasbond/update', [KasbondKontroller::class, 'update'])->name('user.update');
-<<<<<<< HEAD
-Route::get('/data_kasbond/delete/{id}', [KasbondKontroller::class, 'delete'])->name('user.delete');
-=======
 Route::delete('/data_kasbond/hapus/{id}', [KasbondKontroller::class, 'hapus'])->name('user.hapus');
->>>>>>> 19b85160b8e945c74a21850b4251ca6899371f8c
 
 // Route for login
 Route::get('/login', [LoginController::class, 'index']);

@@ -54,18 +54,6 @@
                 </form>
             </div>
 
-            {{-- <div class="row justify-content-end">
-                <div class="col-md-6">
-                    <form action="/">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Search..." name="search"
-                                value="{{ request('search') }}">
-                            <button class="btn btn-outline-secondary" type="submit">Search</button>
-                        </div>
-                    </form>
-                </div>
-            </div> --}}
-
             <table class="table table-striped mt-2" id="TableToExport">
 
                 <tr>
@@ -118,20 +106,10 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Batalkan</button>
-<<<<<<< HEAD
-                                            <form action="route('user.hapus', $p->id)" method="POST">
-                                                @csrf
-                                                @method('delete')
-                                                <button type="submit">Hapus</button>
-=======
                                             <form action="/data_kasbond/hapus/{{ $p->id }}" method="POST">
                                                 @csrf
                                                 @method('delete')
-                                                <button type="submit" class="btn btn-danger" data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModal">
-                                                    Hapus
-                                                </button>
->>>>>>> 19b85160b8e945c74a21850b4251ca6899371f8c
+                                                <button type="submit">Hapus</button>
                                             </form>
                                         </div>
                                     </div>
@@ -157,7 +135,7 @@
             /* Create worksheet from HTML DOM TABLE */
             var wb = XLSX.utils.table_to_book(document.getElementById("TableToExport"));
             /* Export to file (start a download) */
-            XLSX.writeFile(wb, "SheetJSTable.xlsx");
+            XLSX.writeFile(wb, "Data Kasbon hari ini.xlsx");
         });
     </script>
 </body>
