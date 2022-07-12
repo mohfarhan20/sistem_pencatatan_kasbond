@@ -90,6 +90,6 @@ class KasbondKontroller extends Controller
         DB::table('data_kasbond')->where('id', $id)->delete();
 
         // alihkan halaman ke halaman pegawai
-        return redirect('/');
+        return redirect('/')->with('status', 'Data Berhasil Dihapus');
     }
 }
