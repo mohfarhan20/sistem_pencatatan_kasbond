@@ -46,7 +46,15 @@
                     <button id="sheetjsexport" class="btn btn-success"><i class="fa-solid fa-file-excel me-1"></i><b
                             class="ms-1">Export as
                             XLSX</b></button>
+                            
                 </div>
+
+                <form action="/" class="d-flex align-items-center my-1 col-lg-5">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search..." name="search">
+                        <button class="btn btn-secondary" type="submit">Search</button>
+                      </div>
+                </form>
 
                 <form action="/" class="my-1 d-flex align-items-center">
                     <input type="date" name="tanggal" id="tanggal" class="form-control me-1">
