@@ -43,9 +43,10 @@
                         <button class="btn btn-primary"><i class="fas fa-plus me-1"></i> <b class="ms-1">Tambah Data
                                 Baru</b></button>
                     </a>
-                    <button id="sheetjsexport" class="btn btn-success"><i class="fa-solid fa-file-excel me-1"></i><b
+                    {{-- new add (for pagination) --}}
+                    <button id="sheetjsexport" class="btn btn-success"><i class="fa-solid fa-file-excel me-1"></i> <b
                             class="ms-1">Export as
-                            XLSX</b></button>
+                            XLSX</b> <a href="/data_kasbond/download_data"></a></button>
                 </div>
 
                 <form action="/" class="my-1 d-flex align-items-center">
@@ -91,8 +92,8 @@
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
+                            <div class="modal fade " id="exampleModal" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
