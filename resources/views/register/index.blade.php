@@ -31,46 +31,38 @@
                         <h1 class="h3 mb-3 fw-normal">Register</h1>
 
                         <div class="form-floating">
-                            <input type="text" class="form-control @eror('nama') is-invalid @enderror"
-                                id="nama" name="nama" placeholder="Input Nama">
+                            <input type="text" class="form-control" id="nama" name="nama"
+                                placeholder="Input Nama">
                             <label for="nama">Nama</label>
-                            @eror('nama')
-                            <div class="invalid-feedback">
-                                {{ $messeage }}
-                            </div>
-                        @enderror
-                    </div>
 
-                    <div class="form-floating">
-                        <input type="text"
-                            class="form-control @eror('username') is-invalid @enderror "id="username"
-                            name="username" placeholder="Input Username">
-                        <label for="username">Username</label>
-                    </div>
+                        </div>
 
-                    <div class="form-floating">
-                        <input type="email" class="form-control @eror('email') is-invalid @enderror"
-                            id="email" placeholder="Input Email">
-                        <label for="email">Email address</label>
-                    </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control " name="username" placeholder="Input Username">
+                            <label for="username">Username</label>
+                        </div>
 
-                    <div class="form-floating">
-                        <input type="password" class="form-control @eror('password') is-invalid @enderror"
-                            id="password" placeholder="Password">
-                        <label for="password">Password</label>
-                    </div>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="email" placeholder="Input Email">
+                            <label for="email">Email address</label>
+                        </div>
 
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                        <div class="form-floating">
+                            <input type="password" class="form-control " id="password" placeholder="Password">
+                            <label for="password">Password</label>
+                        </div>
 
-                </form>
-                <small class="d-block text-center mt-3"> Already Registered <a href="/login">Login
-                    </a></small>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+
+                    </form>
+                    <small class="d-block text-center mt-3"> Already Registered <a href="/login">Login
+                        </a></small>
 
 
-            </main>
-        </body>
+                </main>
+            </body>
+        </div>
     </div>
-</div>
 </div>
 
 </html>
