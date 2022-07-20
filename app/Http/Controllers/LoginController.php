@@ -20,7 +20,24 @@ class LoginController extends Controller
             'password' => 'required'
         ]);
 
-        if(Auth::attempt($credentials)) {
+        // $request->validate([
+        //     'username' => 'required|string',
+        //     'password' => "required|string"
+        // ]);
+
+        // $login = [
+        //     'username' => $request->username,
+        //     'password' => $request->password
+        // ];
+
+        // if (Auth::attempt($login)) {
+        //     return redirect()->route('user.index');
+        // } else {
+        //     $errors = new MessageBag(['password' => ['username atau Password salah']]);
+        //     return Redirect::back()->withErrors($errors);
+        // }
+
+        if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
             return redirect()->intended('/');
         }
