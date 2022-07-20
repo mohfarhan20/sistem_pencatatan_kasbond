@@ -46,12 +46,9 @@
                     {{-- new add (for pagination) --}}
                     <button id="sheetjsexport" class="btn btn-success"><i class="fa-solid fa-file-excel me-1"></i> <b
                             class="ms-1">Export as
-<<<<<<< HEAD
                             XLSX</b></button>
                             
-=======
                             XLSX</b> <a href="/data_kasbond/download_data"></a></button>
->>>>>>> 1fb11478cc588c868190e52bc6b54a0b8ab66d6d
                 </div>
 
                 <form action="/" class="d-flex align-items-center my-1 col-lg-5">

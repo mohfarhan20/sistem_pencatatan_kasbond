@@ -27,7 +27,10 @@ Route::get('/data_kasbond/download_data', [KasbondKontroller::class, 'download']
 
 // Route for login
 Route::get('/login', [LoginController::class, 'index']);
+Route::post('/login', [LoginController::class, 'authenticate']);
 
 // Route for register
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/', [KasbondKontroller::class. 'index']);
