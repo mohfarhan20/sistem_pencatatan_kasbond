@@ -45,10 +45,11 @@
                     </a>
                     {{-- new add (for pagination) --}}
 
-                    <button id="sheetjsexport" class="btn btn-success"><i class="fa-solid fa-file-excel me-1"></i> <b
-                            class="ms-1">Export as
-                            XLSX</b></button>
-                    <a href="{{ route('user.download') }}"></a>
+
+                    <a href="{{ route('user.download') }}" target="_blank">
+                        <button id="sheetjsexport" class="btn btn-success"><i class="fa-solid fa-file-excel me-1"></i>
+                            <b class="ms-1">Export as
+                                XLSX</b></button></a>
                 </div>
 
                 <form action="/" class="d-flex align-items-center my-1 col-lg-5">
@@ -78,9 +79,9 @@
                     </thead>
                 </tr>
 
-                @foreach ($data_kasbond as $p)
+                @foreach ($data_kasbond as $key => $p)
                     <tr>
-                        <td>{{ $loop->iteration }}</td>
+                        <td>{{ $data_kasbond->firstItem() + $key }}</td>
                         <td> {{ $p->created_at }}</td>
                         <td>{{ $p->MasterData->coa }}</td>
                         <td>{{ $p->MasterData->deskripsi }}</td>
@@ -139,15 +140,7 @@
     </section>
     @include('script')
 
-    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
-    <script>
-        document.getElementById("sheetjsexport").addEventListener('click', function() {
-            /* Create worksheet from HTML DOM TABLE */
-            var wb = XLSX.utils.table_to_book(document.getElementById("TableToExport"));
-            /* Export to file (start a download) */
-            XLSX.writeFile(wb, "Data Kasbon hari ini.xlsx");
-        });
-    </script>
+
 </body>
 
 </html>
