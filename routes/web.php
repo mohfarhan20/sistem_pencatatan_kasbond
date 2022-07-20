@@ -33,4 +33,4 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/', [KasbondKontroller::class. 'index']);
+// Route::get('/', [KasbondKontroller::class. 'index']);
