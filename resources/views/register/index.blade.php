@@ -30,29 +30,23 @@
                         <img class="mb-4" alt="">
                         <h1 class="h3 mb-3 fw-normal">Register</h1>
 
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="nama" name="nama"
-                                placeholder="Input Nama">
-                            <label for="nama">Nama</label>
-
-                        </div>
 
                         <div class="form-floating">
-                            <input type="text" class="form-control " name="username" placeholder="Input Username">
+                            <input type="text" class="form-control " name="username" id="username" placeholder="Input Username">
                             <label for="username">Username</label>
                         </div>
 
                         <div class="form-floating">
-                            <input type="email" class="form-control" id="email" placeholder="Input Email">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Input Email">
                             <label for="email">Email address</label>
                         </div>
 
                         <div class="form-floating">
-                            <input type="password" class="form-control " id="password" placeholder="Password">
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password">
                             <label for="password">Password</label>
                         </div>
 
-                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
 
                     </form>
                     <small class="d-block text-center mt-3"> Already Registered <a href="/login">Login
