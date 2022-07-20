@@ -15,6 +15,8 @@ class KasbondKontroller extends Controller
         // $data_kasbond = DataKasbond::with('MasterData')->latest()->get();
         // =======
 
+        
+
         $data_kasbond = DataKasbond::with('MasterData')->latest();
         if ($request->tanggal) {
             $data_kasbond = $data_kasbond->where('created_at', $request->tanggal);
