@@ -15,7 +15,7 @@ class KasbondKontroller extends Controller
         // $data_kasbond = DataKasbond::with('MasterData')->latest()->get();
         // =======
 
-        
+
 
         $data_kasbond = DataKasbond::with('MasterData')->latest();
         if ($request->tanggal) {
@@ -30,9 +30,10 @@ class KasbondKontroller extends Controller
         // >>>>>>> 99cbdf6bd8971ccb9c018e882b32ffd5c4b8837b
         return view('index', compact('data_kasbond'));
     }
+
     public function download()
     {
-        $data = DataKasbond::all();
+        $data_kasbond = DataKasbond::all();
 
         return view('download', compact('data_kasbond'));
     }
