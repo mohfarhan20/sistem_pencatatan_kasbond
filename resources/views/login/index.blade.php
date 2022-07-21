@@ -218,7 +218,7 @@ body {
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="../../../public/assets/employee-vector.png" alt="Employee Vector" class="img-fluid">
+                    <img src="assets/employee-vector.png" alt="Employee Vector" class="img-fluid">
                 </div>
             </div>
         </div>
