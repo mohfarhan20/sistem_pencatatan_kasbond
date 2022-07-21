@@ -20,15 +20,13 @@ class LoginController extends Controller
             'password' => 'required|string'
         ]);
 
-<<<<<<< HEAD
         $credentials = [
             'username' => $request->username,
             'password' => $request->password
         ];
 
 
-        if(Auth::attempt($credentials)) {
-=======
+        // if(Auth::attempt($credentials)) {
         // $request->validate([
         //     'username' => 'required|string',
         //     'password' => "required|string"
@@ -47,13 +45,13 @@ class LoginController extends Controller
         // }
 
         if (Auth::attempt($credentials)) {
->>>>>>> 506a9299a9e145e15867e701ec27da69b90f6a82
             $request->session()->regenerate();
-            return redirect()->intended('register');
+            return redirect()->intended('/');
         } else {
             return back()->with('loginError', 'Login failed!');
         }
 
         
     }
+
 }
