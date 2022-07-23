@@ -120,7 +120,7 @@
                                             <form action="/data_kasbond/hapus/{{ $p->id }}" method="POST">
                                                 @csrf
                                                 @method('delete')
-                                                <button type="submit">Hapus</button>
+                                                <button type="submit" class="btn btn-danger">Hapus</button>
                                             </form>
                                         </div>
                                     </div>
