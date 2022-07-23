@@ -36,7 +36,20 @@
     @endif
     <section class="p-4">
         <div class="container">
+            {{-- <div class="col-lg-6 alert alert-success d-flex justify-content-between" role="alert">
+                <h4>Welcome back, {{ auth()->user()->username }}</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div> --}}
             <h2 class="text-center fw-bolder text-primary mt-5"> DATA KASBOND </h2>
+            <div class="justify-content-between d-flex">
+                <form action="/logout" method="POST">
+                    @csrf
+                    <button type="submit" class="btn btn-danger">Logout</button>
+                </form>
+                @can('admin')
+                <a href="/data_kasbond/register"><button class="btn btn-outline-secondary">Register</button></a>
+                @endcan
+            </div>
             <div class="d-flex justify-content-between">
                 <div class="text-start mt-4">
                     <a href="{{ route('user.tambah') }}" style="text-decoration: none">

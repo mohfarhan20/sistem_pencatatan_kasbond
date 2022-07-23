@@ -16,4 +16,9 @@ class DataKasbond extends Model
     {
         return $this->belongsTo(MasterData::class,  'id_master_data', 'id');
     }
+
+    public function author()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }

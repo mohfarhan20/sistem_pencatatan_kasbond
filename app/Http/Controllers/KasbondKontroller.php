@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\DataKasbond;
 use App\Models\MasterData;
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
 
 class KasbondKontroller extends Controller
@@ -28,7 +29,9 @@ class KasbondKontroller extends Controller
         $data_kasbond = $data_kasbond->paginate(10);
 
         // >>>>>>> 99cbdf6bd8971ccb9c018e882b32ffd5c4b8837b
-        return view('index', compact('data_kasbond'));
+        return view('index', compact('data_kasbond'),[
+            'DataKasbond' => User::where('id', auth()->user()->id)->get()
+        ]);
     }
 
     public function download()
