@@ -20,42 +20,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
-    <!-- Navbar -->
-    <section section class="sticky-top">
-        <nav class="navbar navbar-expand-lg shadow">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">BSB BISA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Navbar -->
+        <section section class="sticky-top">
+            <nav class="navbar navbar-expand-lg shadow">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="index.html">BSB BISA</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item mx-3">
-                <a class="nav-link" aria-current="page" href="index.html">BERANDA</a>
-                </li>
-                <li class="nav-item mx-3 dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" aria-current="page" href="/">BERANDA</a>
+                            </li>
+                            <li class="nav-item mx-3 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     FITUR
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">PESIRAH</a></li>
-                    <li><a class="dropdown-item" href="#">KREDIT USAHA RAKYAT (KUR)</a></li>
-                    <li><a class="dropdown-item" href="#">KREDIT SERBA GUNA (KSG)</a></li>
-                    <li><a class="dropdown-item" href="employee_login.html">EMPLOYEE ROOM</a></li>
-                </ul>
-                </li>
-                <li class="nav-item mx-3">
-                <a class="nav-link" href="index.html#about">TENTANG</a>
-                </li>
-                <li class="nav-item mx-3">
-                <a class="nav-link" href="index.html#contact">KONTAK</a>
-                </li>
-            </ul>
-            </div>
-        </div>
-        </nav>
-    </section>
-    <!-- End Navbar -->
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">PESIRAH</a></li>
+                                    <li><a class="dropdown-item" href="/kur-page">KREDIT USAHA RAKYAT (KUR)</a></li>
+                                    <li><a class="dropdown-item" href="#">KREDIT SERBA GUNA (KSG)</a></li>
+                                    <li><a class="dropdown-item" href="/login">EMPLOYEE ROOM</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="/#about">TENTANG</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="/#contact">KONTAK</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- End Navbar -->
+
 
     <!-- Carousel hero img -->
     <section class="hero pl-lg-5 px-5 shadow">
@@ -113,7 +114,7 @@
                 </a>
             </div>
             <div class="col-lg-4 text-center">
-                <a href="index.html">
+                <a href="/kur-page">
                 <div class="card-service mb-4">
                     <div class="box-icon-service position-relative mx-auto">
                     <img src="assets/img/logo-card-KUR.png" alt="Pesirah" class="position-absolute top-50 start-50 translate-middle">
@@ -124,7 +125,7 @@
                 </a>
             </div>
             <div class="col-lg-4 text-center">
-                <a href="index.html">
+                <a href="/">
                 <div class="card-service mb-4">
                     <div class="box-icon-service position-relative mx-auto">
                     <img src="assets/img/logo-card-KSG.png" alt="Pesirah" class="position-absolute top-50 start-50 translate-middle">
@@ -270,9 +271,9 @@
                 <ul>
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="index.html">Pesirah</a></li>
-                <li><a href="index.html">Kredit Usaha Rakyat (KUR)</a></li>
+                <li><a href="/kur-page">Kredit Usaha Rakyat (KUR)</a></li>
                 <li><a href="index.html">Kredit Serba Guna (KSG)</a></li>
-                <li><a href="index.html">Employee Room</a></li>
+                <li><a href="/login">Employee Room</a></li>
                 </ul>
             </div>
             <div class="col-lg-4 address">

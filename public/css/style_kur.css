@@ -1,0 +1,58 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #DFF6FF;
+    font-size: 16px;
+    color: #1363DF;
+}
+
+.navbar {
+    background-color: #1363DF;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.dropdown-menu {
+    background-color: #47B5FF; 
+}
+
+#hero {
+    background: linear-gradient(to left,#fff 40%, #1363DF);
+}
+ 
+
+
+
+/* Footer Section */
+.footer {
+    background-color: #06283D;
+    color: #fff;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #47B5FF;
+    font-size: 18px;
+}
+
+.footer .copyright {
+    border-top: 5px solid #47B5FF;
+    padding: 30px 0 20px;
+    font-weight: 600;
+}
+
+.footer .address {
+    font-size: 18px;
+}
