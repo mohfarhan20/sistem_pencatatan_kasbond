@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- Added CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('/css/style_home.css') }}">
 
     <!-- Poppins Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,7 +66,7 @@
             </div>
             <div class="row justify-content-center mt-5 px-2">
                 <div class="col-lg-2 text-center">
-                    <a href="index.html">
+                    <a href="/data_kasbond">
                         <div class="card-choosing mb-4">
                             <div class="box-icon-choosing position-relative mx-auto">
                             <!-- <img src="..." alt="Pesirah" class="position-absolute top-50 start-50 translate-middle"> -->
@@ -76,7 +76,7 @@
                     </a>
                 </div>
                 <div class="col-lg-2 text-center">
-                    <a href="index.html">
+                    <a href="#">
                         <div class="card-choosing mb-4">
                             <div class="box-icon-choosing position-relative mx-auto">
                             <!-- <img src="..." alt="Pesirah" class="position-absolute top-50 start-50 translate-middle"> -->
@@ -86,7 +86,7 @@
                     </a>
                 </div>
                 <div class="col-lg-2 text-center">
-                    <a href="index.html">
+                    <a href="#">
                         <div class="card-choosing mb-4">
                             <div class="box-icon-choosing position-relative mx-auto">
                             <!-- <img src="..." alt="Pesirah" class="position-absolute top-50 start-50 translate-middle"> -->
@@ -96,7 +96,7 @@
                     </a>
                 </div>
                 <div class="col-lg-2 text-center">
-                    <a href="index.html">
+                    <a href="#">
                         <div class="card-choosing mb-4">
                             <div class="box-icon-choosing position-relative mx-auto">
                             <!-- <img src="..." alt="Pesirah" class="position-absolute top-50 start-50 translate-middle"> -->

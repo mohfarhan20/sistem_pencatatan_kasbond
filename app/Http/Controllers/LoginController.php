@@ -27,7 +27,7 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('/data_kasbond');
+            return redirect()->intended('/employee-room');
         } else {
             return back()->with('loginError', 'Login failed!');
         }

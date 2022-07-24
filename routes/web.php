@@ -28,9 +28,13 @@ Route::get('/ksg-page', function () {
     return view('home.ksg');
 });
 
+Route::get('/employee-room', function () {
+    return view('home.employee_room');
+})->middleware('auth');
+
 Route::get('/umum-page', function () {
     return view('home.umum');
-});
+})->middleware('auth');
 
 
 // Route::get('/kasbond', 'KasbondController@index');
