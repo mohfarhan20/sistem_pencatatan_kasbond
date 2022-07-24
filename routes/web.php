@@ -24,6 +24,15 @@ Route::get('/kur-page', function () {
     return view('home.kur');
 });
 
+Route::get('/ksg-page', function () {
+    return view('home.ksg');
+});
+
+Route::get('/umum-page', function () {
+    return view('home.umum');
+});
+
+
 // Route::get('/kasbond', 'KasbondController@index');
 Route::get('/data_kasbond', [KasbondKontroller::class, 'index'])->name('user.index')->middleware('auth');
 Route::get('/data_kasbond/tambah', [KasbondKontroller::class, 'tambah'])->name('user.tambah');

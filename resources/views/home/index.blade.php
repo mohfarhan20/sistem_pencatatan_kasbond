@@ -40,7 +40,7 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><a class="dropdown-item" href="#">PESIRAH</a></li>
                                     <li><a class="dropdown-item" href="/kur-page">KREDIT USAHA RAKYAT (KUR)</a></li>
-                                    <li><a class="dropdown-item" href="#">KREDIT SERBA GUNA (KSG)</a></li>
+                                    <li><a class="dropdown-item" href="/ksg-page">KREDIT SERBA GUNA (KSG)</a></li>
                                     <li><a class="dropdown-item" href="/login">EMPLOYEE ROOM</a></li>
                                 </ul>
                             </li>
@@ -125,7 +125,7 @@
                 </a>
             </div>
             <div class="col-lg-4 text-center">
-                <a href="/">
+                <a href="/ksg-page">
                 <div class="card-service mb-4">
                     <div class="box-icon-service position-relative mx-auto">
                     <img src="assets/img/logo-card-KSG.png" alt="Pesirah" class="position-absolute top-50 start-50 translate-middle">
@@ -272,7 +272,7 @@
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="index.html">Pesirah</a></li>
                 <li><a href="/kur-page">Kredit Usaha Rakyat (KUR)</a></li>
-                <li><a href="index.html">Kredit Serba Guna (KSG)</a></li>
+                <li><a href="/ksg-page">Kredit Serba Guna (KSG)</a></li>
                 <li><a href="/login">Employee Room</a></li>
                 </ul>
             </div>

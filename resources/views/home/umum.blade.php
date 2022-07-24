@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Room</title>
+    <title>Unit Umum dan Akuntansi</title>
     <!-- Bootstrap 5.2 css cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- Added CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- Poppins Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,20 +58,20 @@
     
     <!-- Choosing Card -->
     <section class="choosing-card">
-        <div class="container-lg">
+        <div class="container-lg umum-unit">
             <div class="row text-center">
                 <div class="col-lg-12">
-                    <h1>EMPLOYEE ROOM</h1>
+                    <h1>Unit Umum dan Akuntansi</h1>
                 </div>
             </div>
             <div class="row justify-content-center mt-5 px-2">
                 <div class="col-lg-2 text-center">
-                    <a href="/umum-page">
+                    <a href="index.html">
                         <div class="card-choosing mb-4">
                             <div class="box-icon-choosing position-relative mx-auto">
                             <!-- <img src="..." alt="Pesirah" class="position-absolute top-50 start-50 translate-middle"> -->
                             </div>
-                            <p class="mt-3">Unit <br> Umum dan Akuntansi</p>
+                            <p class="mt-3">Stambuk<br>Kasbon</p>
                         </div>
                     </a>
                 </div>
@@ -81,7 +81,7 @@
                             <div class="box-icon-choosing position-relative mx-auto">
                             <!-- <img src="..." alt="Pesirah" class="position-absolute top-50 start-50 translate-middle"> -->
                             </div>
-                            <p class="mt-3">Unit <br> Lain</p>
+                            <p class="mt-3">Stambuk<br>Memo</p>
                         </div>
                     </a>
                 </div>
@@ -91,7 +91,7 @@
                             <div class="box-icon-choosing position-relative mx-auto">
                             <!-- <img src="..." alt="Pesirah" class="position-absolute top-50 start-50 translate-middle"> -->
                             </div>
-                            <p class="mt-3">Unit <br> Lain</p>
+                            <p class="mt-3">Stambuk<br>Surat Keluar</p>
                         </div>
                     </a>
                 </div>
@@ -101,54 +101,10 @@
                             <div class="box-icon-choosing position-relative mx-auto">
                             <!-- <img src="..." alt="Pesirah" class="position-absolute top-50 start-50 translate-middle"> -->
                             </div>
-                            <p class="mt-3">Unit <br> Lain</p>
+                            <p class="mt-3">Stambuk<br>OB</p>
                         </div>
                     </a>
-                </div>
-                
-            </div>
-            <div class="row justify-content-center px-2">
-                <div class="col-lg-2 text-center">
-                    <a href="index.html">
-                        <div class="card-choosing mb-4">
-                            <div class="box-icon-choosing position-relative mx-auto">
-                            <!-- <img src="..." alt="Pesirah" class="position-absolute top-50 start-50 translate-middle"> -->
-                            </div>
-                            <p class="mt-3">Unit <br> Lain</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <a href="index.html">
-                        <div class="card-choosing mb-4">
-                            <div class="box-icon-choosing position-relative mx-auto">
-                            <!-- <img src="..." alt="Pesirah" class="position-absolute top-50 start-50 translate-middle"> -->
-                            </div>
-                            <p class="mt-3">Unit <br> Lain</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <a href="index.html">
-                        <div class="card-choosing mb-4">
-                            <div class="box-icon-choosing position-relative mx-auto">
-                            <!-- <img src="..." alt="Pesirah" class="position-absolute top-50 start-50 translate-middle"> -->
-                            </div>
-                            <p class="mt-3">Unit <br> Lain</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <a href="index.html">
-                        <div class="card-choosing mb-4">
-                            <div class="box-icon-choosing position-relative mx-auto">
-                            <!-- <img src="..." alt="Pesirah" class="position-absolute top-50 start-50 translate-middle"> -->
-                            </div>
-                            <p class="mt-3">Unit <br> Lain</p>
-                        </div>
-                    </a>
-                </div>
-                
+                </div>              
             </div>
         </div>
     </section>
