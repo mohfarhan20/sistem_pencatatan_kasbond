@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('home.index');
+});
+
 // Route::get('/kasbond', 'KasbondController@index');
 Route::get('/data_kasbond', [KasbondKontroller::class, 'index'])->name('user.index')->middleware('auth');
 Route::get('/data_kasbond/tambah', [KasbondKontroller::class, 'tambah'])->name('user.tambah');

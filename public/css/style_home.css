@@ -1,0 +1,342 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #DFF6FF;
+    font-size: 16px;
+    color: #1363DF;
+}
+
+.navbar {
+    background-color: #1363DF;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.dropdown-menu {
+    background-color: #47B5FF; 
+}
+
+
+.hero {
+    padding: 20px 0 50px 0;
+    background-color: #1363DF;
+}
+
+.title {
+    color: #fff;
+    padding: 40px 40px 0 40px;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.title-desc {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#service, #about, #contact, #about-ksg{
+    padding: 65px 0 0 0;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #1363DF;
+}
+
+body a {
+    text-decoration: none;
+}
+
+/* Service Section */
+.card-service {
+    width: 100%;
+    height: 352px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 67px 42px 57PX;
+    box-shadow: 5px 5px 10px rgba(71, 181, 255, 0.43);
+    color: #1363DF;
+}
+
+.box-icon-service {
+    width: 120px;
+    height: 120px;
+    background-color: #47B5FF;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.card-service:hover {
+    width: 100%;
+    height: 352px;
+    border-radius: 10px;
+    background: linear-gradient(130.26deg, #1363DF -74.27%, #47B5FF 176.8%);
+    padding: 67px 42px 57PX;
+    box-shadow: 5px 5px 10px rgba(71, 181, 255, 0.43);
+    color: #fff;
+}
+
+.card-service:hover .box-icon-service {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* about section */
+#about .container {
+    background: linear-gradient(102.69deg, #1363DF -14.99%, #47B5FF 100.37%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(71, 181, 255, 0.43);
+    color: #fff;
+    line-height: 24px;
+}
+
+#about .row p {
+    text-align: justify;
+}
+
+#about .first {
+    margin-bottom: 20px;
+}
+
+#about .container {
+    padding: 20px 80px;
+}
+
+/* Contact section */
+.card-contact {
+    width: 100%;
+    height: 352px;
+    border-radius: 10px;
+    background: linear-gradient(163.65deg, #47B5FF -7.91%, #1363DF 328.91%);
+    box-shadow: 5px 5px 10px rgba(71, 181, 255, 0.43);
+    padding: 50px 81px;
+    color: #fff;
+}
+
+#contact img {
+    padding-right: 30px;
+}
+
+#contact table p {
+    padding: 20px 0 0 0 ;
+    font-weight: 600;
+}
+
+#contact .phone-number {
+    padding: 10px 0 0px 10px;
+}
+
+#contact h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#contact .social-media table p {
+    padding-top: 15px;
+}
+
+#contact .social-media {
+    line-height: 10px;
+    /* margin-top: 10px; */
+    padding: 15px 0 0px 20px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #06283D;
+    color: #fff;
+    margin-top: 63px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #47B5FF;
+    font-size: 18px;
+}
+
+.footer .copyright {
+    border-top: 5px solid #47B5FF;
+    padding: 30px 0 20px;
+    font-weight: 600;
+}
+
+.footer .address {
+    font-size: 18px;
+}
+
+
+/* EMPLOYEE_ROOM STYLE */
+
+/* Choosing Card Section */
+
+.choosing-card .container-lg {
+    padding: 120px 0;
+}
+
+.card-choosing {
+    width: 100%;
+    height: 181px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 35px 12px;
+    box-shadow: 5px 5px 10px rgba(71, 181, 255, 0.43);
+    color: #1363DF;
+}
+
+.box-icon-choosing {
+    width: 57px;
+    height: 57px;
+    background-color: #47B5FF;
+    border-radius: 10px;
+}
+
+.card-choosing:hover {
+    width: 100%;
+    height: 181px;
+    border-radius: 10px;
+    background: linear-gradient(130.26deg, #1363DF -74.27%, #47B5FF 176.8%);
+    padding: 35px 12px;
+    box-shadow: 5px 5px 10px rgba(71, 181, 255, 0.43);
+    color: #fff;
+}
+
+.card-choosing:hover .box-icon-choosing {
+    width: 57px;
+    height: 57px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.choosing-card p {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.choosing-card .card-group {
+    margin-top: 50px;
+}
+
+/* EMPLOYEE LOGIN PAGE */
+
+/* login and vector section */
+.login-and-vector .container-lg {
+    padding: 80px 0 80px;
+}
+.login-and-vector td {
+    padding: 5px 10px 5px 0;
+}
+
+.login-and-vector .input {
+    font-size: 14px;
+    border: 1px solid #1363DF;
+}
+
+.login-and-vector .button-primary,
+.login-and-vector .button-secondary  {
+    margin-top: 12px;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.login-and-vector .button-primary {
+    background-color: #1363DF;
+    border: 1px solid #1363DF;
+
+}
+
+.login-and-vector .button-secondary {
+    background-color: #FF725E;
+    border: 1px solid #FF725E;
+}
+
+.login-and-vector .button-primary:hover {
+    background-color: #fff;
+    border: 1px solid #1363DF;
+    color: #1363DF;
+
+}
+
+.login-and-vector .button-secondary:hover {
+    background-color: #fff;
+    border: 1px solid #FF725E;
+    color: #FF725E;
+}
+
+/* UNIT UMUM STYLES */
+
+/* card section */
+.choosing-card .umum-unit {
+    padding: 120px 0 300px;
+}
+
+/* UNIT KSG STYLES */
+
+/* KSG hero section */
+#ksg-hero {
+    background: linear-gradient(102.69deg, #1363DF -14.99%, #47B5FF 100.37%);
+    color: #fff;
+    box-shadow: 5px 5px 10px rgba(71, 181, 255, 0.43);
+}
+#ksg-hero img {
+    margin: 30px 0;
+}
+
+#ksg-hero p {
+    text-align: justify;
+}
+
+#bunga-promo {
+    padding: 50px 0 20px;
+}
+
+#bunga-promo .badge-bunga {
+    background: linear-gradient(102.69deg, #1363DF -14.99%, #47B5FF 100.37%);
+    padding: 22px 0px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 5px 5px 10px rgba(71, 181, 255, 0.43);
+}
+
+/* Provision Section */
+
+#provision {
+    background: linear-gradient(102.69deg, #1363DF -14.99%, #47B5FF 100.37%);
+    padding: 103px 0;
+    text-align: justify;
+}
+
+#provision .container-lg {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.43);
+    padding: 54px 103px;
+}
+
+#provision ul li {
+    font-size: 14px;
+}   
