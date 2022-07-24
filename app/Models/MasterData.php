@@ -15,4 +15,5 @@ class MasterData extends Model
     {
         return $this->hasMany(DataKasbond::class, 'id', 'id_master_data');
     }
+
 }
