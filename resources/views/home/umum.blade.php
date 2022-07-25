@@ -30,17 +30,17 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item mx-3">
-                <a class="nav-link" aria-current="page" href="index.html">BERANDA</a>
+                <a class="nav-link" aria-current="page" href="/">BERANDA</a>
                 </li>
                 <li class="nav-item mx-3 dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     FITUR
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">PESIRAH</a></li>
-                    <li><a class="dropdown-item" href="#">KREDIT USAHA RAKYAT(KUR)</a></li>
-                    <li><a class="dropdown-item" href="#">Delia</a></li>
-                    <li><a class="dropdown-item" href="#">EMPLOYEE ROOM</a></li>
+                    <li><a class="dropdown-item" href="/pesirah-page">PESIRAH</a></li>
+                    <li><a class="dropdown-item" href="/kur-page">KREDIT USAHA RAKYAT(KUR)</a></li>
+                    <li><a class="dropdown-item" href="/ksg-page">KREDIT SERBA GUNA (KSG)</a></li>
+                    <li><a class="dropdown-item" href="/login">EMPLOYEE ROOM</a></li>
                 </ul>
                 </li>
                 <li class="nav-item mx-3">
@@ -119,11 +119,11 @@
             </div>
             <div class="menu col-lg-3">
                 <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="index.html">Pesirah</a></li>
-                <li><a href="index.html">Kredit Usaha Rakyat (KUR)</a></li>
-                <li><a href="index.html">Kredit Serba Guna (KSG)</a></li>
-                <li><a href="index.html">Employee Room</a></li>
+                <li><a href="/">Beranda</a></li>
+                <li><a href="/pesirah-page">Pesirah</a></li>
+                <li><a href="/kur-page">Kredit Usaha Rakyat (KUR)</a></li>
+                <li><a href="/ksg-page">Kredit Serba Guna (KSG)</a></li>
+                <li><a href="/login">Employee Room</a></li>
                 </ul>
             </div>
             <div class="col-lg-4 address">
