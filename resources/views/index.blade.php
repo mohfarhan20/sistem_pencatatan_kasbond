@@ -72,7 +72,7 @@
                     </div>
                 </form>
 
-                <form action="/" class="my-1 d-flex align-items-center">
+                <form action="/data_kasbond" class="my-1 d-flex align-items-center">
                     <input type="date" name="tanggal" id="tanggal" class="form-control me-1">
                     <button type="submit" class="btn btn-secondary ms-1">Cari</button>
                 </form>
