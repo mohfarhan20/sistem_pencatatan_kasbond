@@ -56,7 +56,7 @@
 
     </div>
 
-    <a href="/" class="mr-3">Kembali</a>
+    <a href="/data_kasbond" class="mr-3">Kembali</a>
 
 
     <script src="{{ asset('/js/jquery-3.6.0.min.js') }}"></script>

@@ -29,7 +29,7 @@ class KasbondKontroller extends Controller
         $data_kasbond = $data_kasbond->paginate(10);
 
         // >>>>>>> 99cbdf6bd8971ccb9c018e882b32ffd5c4b8837b
-        return view('index', compact('data_kasbond'),[
+        return view('index', compact('data_kasbond'), [
             'DataKasbond' => User::where('id', auth()->user()->id)->get()
         ]);
     }
@@ -90,9 +90,9 @@ class KasbondKontroller extends Controller
         $data->created_at = now();
 
         if ($data->save()) {
-            return redirect('/')->with('status', 'Data Berhasil Diperbarui');
+            return redirect('/data_kasbond')->with('status', 'Data Berhasil Diperbarui');
         } else {
-            return redirect('/')->back()->with('status', 'Data Gagal Diperbarui');
+            return redirect('/data_kasbond')->back()->with('status', 'Data Gagal Diperbarui');
         }
     }
 
@@ -103,6 +103,6 @@ class KasbondKontroller extends Controller
         DB::table('data_kasbond')->where('id', $id)->delete();
 
         // alihkan halaman ke halaman pegawai
-        return redirect('/')->with('status', 'Data Berhasil Dihapus');
+        return redirect('/data_kasbond')->with('status', 'Data Berhasil Dihapus');
     }
 }
