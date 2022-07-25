@@ -16,6 +16,7 @@
       {{-- <link rel="stylesheet" href="{{ asset('/css/style.css') }}"> --}}
       
       <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+      <link rel="stylesheet" href="{{ asset('/css/style_login.css') }}">
       
       <!-- Poppins Font -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,116 +24,6 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-      <style>
-          html,
-  body {
-    height: 100%;
-  }
-
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #DFF6FF;
-    font-size: 16px;
-    color: #1363DF;
-  }
-  /* EMPLOYEE LOGIN PAGE */
-
-  /* login and vector section */
-  .login-and-vector .container-lg {
-    padding: 80px 0 80px;
-  }
-  .login-and-vector td {
-    padding: 5px 10px 5px 0;
-  }
-
-  .login-and-vector .input {
-    font-size: 14px;
-    border: 1px solid #1363DF;
-  }
-
-  .login-and-vector .button-primary,
-  .login-and-vector .button-secondary  {
-    margin-top: 12px;
-    width: 80px;
-    height: 30px;
-    border-radius: 10px;
-    color: #fff;
-    margin-right: 10px;
-    font-size: 14px;
-  }
-
-  .login-and-vector .button-primary {
-    background-color: #1363DF;
-    border: 1px solid #1363DF;
-
-  }
-
-  .login-and-vector .button-secondary {
-    background-color: #FF725E;
-    border: 1px solid #FF725E;
-  }
-
-  .login-and-vector .button-primary:hover {
-    background-color: #fff;
-    border: 1px solid #1363DF;
-    color: #1363DF;
-
-  }
-
-  .login-and-vector .button-secondary:hover {
-    background-color: #fff;
-    border: 1px solid #FF725E;
-    color: #FF725E;
-  }
-
-  .navbar {
-    background-color: #1363DF;
-  }
-
-  .navbar a {
-    color: #fff;
-  }
-
-  .dropdown-menu {
-    background-color: #47B5FF; 
-  }
-
-  /* Footer Section */
-  .footer {
-    background-color: #06283D;
-    color: #fff;
-    margin-top: 63px;
-  }
-
-  .menu ul li {
-    list-style: none;
-    margin-left: -30px;
-  }
-
-  .footer a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-  }
-
-  .footer a:hover {
-    text-decoration: none;
-    color: #47B5FF;
-    font-size: 18px;
-  }
-
-  .footer .copyright {
-    border-top: 5px solid #47B5FF;
-    padding: 30px 0 20px;
-    font-weight: 600;
-  }
-
-  .footer .address {
-    font-size: 18px;
-  }
-      </style>
-      
 
 
   </head>
@@ -148,17 +39,17 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
               <ul class="navbar-nav">
                   <li class="nav-item mx-3">
-                  <a class="nav-link" aria-current="page" href="index.html">BERANDA</a>
+                  <a class="nav-link" aria-current="page" href="/">BERANDA</a>
                   </li>
                   <li class="nav-item mx-3 dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       FITUR
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">PESIRAH</a></li>
-                      <li><a class="dropdown-item" href="#">KREDIT USAHA RAKYAT(KUR)</a></li>
-                      <li><a class="dropdown-item" href="#">Delia</a></li>
-                      <li><a class="dropdown-item" href="#">EMPLOYEE ROOM</a></li>
+                      <li><a class="dropdown-item" href="/pesirah-page">PESIRAH</a></li>
+                      <li><a class="dropdown-item" href="/kur-page">KREDIT USAHA RAKYAT(KUR)</a></li>
+                      <li><a class="dropdown-item" href="/ksg-page">KREDIT SERBA GUNA (KSG)</a></li>
+                      <li><a class="dropdown-item" href="/login">EMPLOYEE ROOM</a></li>
                   </ul>
                   </li>
                   <li class="nav-item mx-3">
@@ -240,11 +131,11 @@
               </div>
               <div class="menu col-lg-3">
                   <ul>
-                  <li><a href="index.html">Beranda</a></li>
-                  <li><a href="index.html">Pesirah</a></li>
-                  <li><a href="index.html">Kredit Usaha Rakyat (KUR)</a></li>
-                  <li><a href="index.html">Kredit Serba Guna (KSG)</a></li>
-                  <li><a href="index.html">Employee Room</a></li>
+                  <li><a href="/">Beranda</a></li>
+                  <li><a href="/pesirah-page">Pesirah</a></li>
+                  <li><a href="/kur-page">Kredit Usaha Rakyat (KUR)</a></li>
+                  <li><a href="/ksg-page">Kredit Serba Guna (KSG)</a></li>
+                  <li><a href="/login">Employee Room</a></li>
                   </ul>
               </div>
               <div class="col-lg-4 address">

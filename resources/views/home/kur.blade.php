@@ -39,9 +39,9 @@
                     FITUR
                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">PESIRAH</a></li>
+                                    <li><a class="dropdown-item" href="/pesirah-page">PESIRAH</a></li>
                                     <li><a class="dropdown-item" href="/kur-page">KREDIT USAHA RAKYAT (KUR)</a></li>
-                                    <li><a class="dropdown-item" href="#">KREDIT SERBA GUNA (KSG)</a></li>
+                                    <li><a class="dropdown-item" href="/ksg-page">KREDIT SERBA GUNA (KSG)</a></li>
                                     <li><a class="dropdown-item" href="/login">EMPLOYEE ROOM</a></li>
                                 </ul>
                             </li>
@@ -271,11 +271,11 @@
                     </div>
                     <div class="menu col-lg-3">
                         <ul>
-                            <li><a href="index.html">Beranda</a></li>
-                            <li><a href="index.html">Pesirah</a></li>
-                            <li><a href="index.html">Kredit Usaha Rakyat (KUR)</a></li>
-                            <li><a href="index.html">Kredit Serba Guna (KSG)</a></li>
-                            <li><a href="index.html">Employee Room</a></li>
+                            <li><a href="/">Beranda</a></li>
+                            <li><a href="/pesirah-page">Pesirah</a></li>
+                            <li><a href="/kur-page">Kredit Usaha Rakyat (KUR)</a></li>
+                            <li><a href="/ksg-page">Kredit Serba Guna (KSG)</a></li>
+                            <li><a href="/login">Employee Room</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 address">

@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('home.index');
 });
 
+Route::get('/pesirah-page', function () {
+    return view('home.pesirah');
+});
+
 Route::get('/kur-page', function () {
     return view('home.kur');
 });
