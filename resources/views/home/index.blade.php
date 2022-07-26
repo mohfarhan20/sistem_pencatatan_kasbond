@@ -117,7 +117,7 @@
                 <a href="/kur-page">
                 <div class="card-service mb-4">
                     <div class="box-icon-service position-relative mx-auto">
-                    <img src="assets/img/logo-card-KUR.png" alt="Pesirah" class="position-absolute top-50 start-50 translate-middle">
+                    <img src="assets/img/logo kur.jpeg" alt="Pesirah" class="position-absolute top-50 start-50 translate-middle">
                     </div>
                     <h3 class="mt-4">KUR</h3>
                     <p class="mt-2">KREDIT USAHA RAKYAT</p>
