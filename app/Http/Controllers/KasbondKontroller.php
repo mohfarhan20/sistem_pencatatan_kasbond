@@ -12,12 +12,6 @@ class KasbondKontroller extends Controller
 {
     public function index(Request $request)
     {
-        // <<<<<<< HEAD
-        // $data_kasbond = DataKasbond::with('MasterData')->latest()->get();
-        // =======
-
-
-
         $data_kasbond = DataKasbond::with('MasterData')->latest();
         if ($request->tanggal) {
             $data_kasbond = $data_kasbond->where('created_at', $request->tanggal);
@@ -28,16 +22,21 @@ class KasbondKontroller extends Controller
         }
         $data_kasbond = $data_kasbond->paginate(10);
 
-        // >>>>>>> 99cbdf6bd8971ccb9c018e882b32ffd5c4b8837b
         return view('index', compact('data_kasbond'), [
             'DataKasbond' => User::where('id', auth()->user()->id)->get()
         ]);
     }
 
-    public function download()
+    public function download($tanggal)
     {
-        $data_kasbond = DataKasbond::all();
-
+        if ($tanggal != '') {
+            $data_kasbond = DataKasbond::with('MasterData')
+                ->latest()
+                ->whereCreatedAt($tanggal)
+                ->get();
+        } else {
+            $data_kasbond = DataKasbond::all();
+        }
         return view('download', compact('data_kasbond'));
     }
 

@@ -47,7 +47,7 @@
                     <button type="submit" class="btn btn-danger">Logout</button>
                 </form>
                 @can('admin')
-                <a href="/data_kasbond/register"><button class="btn btn-outline-secondary">Register</button></a>
+                    <a href="/data_kasbond/register"><button class="btn btn-outline-secondary">Register</button></a>
                 @endcan
             </div>
             <div class="d-flex justify-content-between">
@@ -58,8 +58,14 @@
                     </a>
                     {{-- new add (for pagination) --}}
 
-
-                    <a href="{{ route('user.download') }}" target="_blank">
+                    @php
+                        if (app('request')->input('tanggal') != null) {
+                            $request = app('request')->input('tanggal');
+                        } else {
+                            $request = '';
+                        }
+                    @endphp
+                    <a href="{{ route('user.download', $request) }}" target="_blank">
                         <button id="sheetjsexport" class="btn btn-success"><i class="fa-solid fa-file-excel me-1"></i>
                             <b class="ms-1">Export as
                                 XLSX</b></button></a>
